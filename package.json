@@ -1,0 +1,26 @@
+{
+  "name": "Movie-API",
+  "version": "1.0.0",
+  "description": "A test task",
+  "main": "app.ts",
+  "repository": "https://github.com/hypeofpipe/Movie-API.git",
+  "author": "hypeofpipe",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.3",
+    "reflect-metadata": "^0.1.12",
+    "ts-node": "^7.0.0",
+    "typeorm": "^0.2.7",
+    "typescript": "^3.0.1"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.1.4",
+    "@types/mocha": "^5.2.5",
+    "@types/node": "^10.5.6",
+    "chai": "^4.1.2",
+    "mocha": "^5.2.0"
+  },
+  "scripts": {
+    "test": "mocha -r ts-node/register --recursive tests/**/**/*.ts"
+  }
+}
