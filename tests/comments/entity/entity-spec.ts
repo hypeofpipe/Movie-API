@@ -1,12 +1,12 @@
 import { expect } from "chai"
 import "mocha"
-import { Connection } from "typeorm"
+import { Connection, getConnectionManager } from "typeorm"
 import { createConnection } from "typeorm"
 import { Comments } from "../../../src/entity/Comments"
 import { Movie } from "../../../src/entity/Movie"
 import { testDB } from "../../../db.env"
 
-describe("Testing a comment entity", () => {
+describe("tests a comment entity", async () => {
   let connection: Connection
 
   beforeEach(async () => {
@@ -26,7 +26,6 @@ describe("Testing a comment entity", () => {
     const comments: Comments = new Comments()
     const movie: Movie = new Movie()
 
-    movie.id = 1
     movie.title = "Bee Movie"
     movie.year = 2007
     movie.rated = "PG"
