@@ -1,21 +1,21 @@
-#Movie-API
+# Movie-API
 
-##The basic movie-api
+## The basic movie-api
 
-###Usage:
-####Warning!
+### Usage:
+#### Warning!
 Don't forget to provide two DB (one for test, another for the app) in db.env.ts file.
-####Setup and run the application:
+#### Setup and run the application:
 
 ```
 yarn
 yarn start
 ```
 
-####Run the tests:
+#### Run the tests:
 
 ```
 yarn test
 ```
 
-####Author: Volodymyr Voleniuk
+#### Author: Volodymyr Voleniuk
