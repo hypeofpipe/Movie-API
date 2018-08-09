@@ -1,13 +1,25 @@
 import { ConnectionOptions } from "typeorm"
 
 export const testDB: ConnectionOptions = {
-  type: "postgres",
+  type: "your_db_type",
   logging: ["error"],
   entities: ["src/entity/*.ts"],
   synchronize: true,
-  host: "dumbo.db.elephantsql.com",
-  port: 5432,
-  database: "wxyjeueg",
-  username: "wxyjeueg",
-  password: "PLyDDARiON3cVMOX7vELBnXYKjnITLFj",
+  host: "your_host",
+  port: your_port,
+  database: "your_db",
+  username: "your_username",
+  password: "your_password",
+}
+
+export const prodDB: ConnectionOptions = {
+  type: "your_db_type",
+  logging: ["error"],
+  entities: ["src/entity/*.ts"],
+  synchronize: true,
+  host: "your_host",
+  port: your_port,
+  database: "your_db",
+  username: "your_username",
+  password: "your_password",
 }
