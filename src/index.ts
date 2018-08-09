@@ -9,6 +9,7 @@ import { error } from "util"
 createConnection(prodDB)
   .then(async connection => {
     const app: any = express()
+    const port = process.env.PORT || 3000
     app.use(bodyParser.json())
 
     AppRoutes.forEach(route => {
@@ -27,8 +28,8 @@ createConnection(prodDB)
       )
     })
 
-    app.listen(3000)
-
-    console.log("The app started on 3000!")
+    app.listen(port, () => {
+      console.log(`The app started on ${port}!`)
+    })
   })
   .catch(error => console.log(error))
